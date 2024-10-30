@@ -1,0 +1,2 @@
+FRONTEND
+Collection.jsx - applyFilter() --- applyFilter() resets the sorting
