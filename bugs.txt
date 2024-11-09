@@ -1,2 +1,3 @@
 FRONTEND
 Collection.jsx - applyFilter() --- applyFilter() resets the sorting
+forgot password on signup page
