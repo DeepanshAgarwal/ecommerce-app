@@ -1,3 +1,8 @@
 FRONTEND
 Collection.jsx - applyFilter() --- applyFilter() resets the sorting
 forgot password on signup page
+
+
+
+features to add
+loading wheel when adding prods from admin panel
