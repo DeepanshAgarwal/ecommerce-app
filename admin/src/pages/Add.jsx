@@ -13,8 +13,8 @@ const Add = ({ token }) => {
     const [name, setName] = useState("");
     const [description, setDescription] = useState("");
     const [price, setPrice] = useState("");
-    const [category, setCategory] = useState("men");
-    const [subCategory, setSubCategory] = useState("topwear");
+    const [category, setCategory] = useState("Men");
+    const [subCategory, setSubCategory] = useState("Topwear");
     const [bestseller, setBestseller] = useState(false);
     const [sizes, setSizes] = useState([]);
 
@@ -48,8 +48,8 @@ const Add = ({ token }) => {
                 setName("");
                 setDescription("");
                 setPrice("");
-                setCategory("men");
-                setSubCategory("women");
+                setCategory("Men");
+                setSubCategory("Topwear");
                 setBestseller(false);
                 setSizes([]);
                 setImage1(false);
@@ -172,9 +172,9 @@ const Add = ({ token }) => {
                         onChange={(e) => setCategory(e.target.value)}
                         className="w-full px-3 py-2"
                     >
-                        <option value="men">Men</option>
-                        <option value="women">Women</option>
-                        <option value="kids">Kids</option>
+                        <option value="Men">Men</option>
+                        <option value="Women">Women</option>
+                        <option value="Kids">Kids</option>
                     </select>
                 </div>
                 <div>
@@ -183,9 +183,9 @@ const Add = ({ token }) => {
                         onChange={(e) => setSubCategory(e.target.value)}
                         className="w-full px-3 py-2"
                     >
-                        <option value="topwear">Topwear</option>
-                        <option value="bottomwear">Bottomwear</option>
-                        <option value="winterwear">Winterwear</option>
+                        <option value="Topwear">Topwear</option>
+                        <option value="Bottomwear">Bottomwear</option>
+                        <option value="Winterwear">Winterwear</option>
                     </select>
                 </div>
                 <div>
