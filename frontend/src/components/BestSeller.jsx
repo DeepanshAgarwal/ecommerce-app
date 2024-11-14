@@ -10,14 +10,14 @@ const BestSeller = () => {
     useEffect(() => {
         const bestProduct = products.filter((item) => item.bestseller);
         setBestSeller(bestProduct.slice(0, 5));
-    }, []);
+    }, [products]);
     return (
         <div className="my-10">
             <div className="text-center py-8 text-3xl">
                 <Title text1={"BEST"} text2={"SELLERS"} />
                 <p className="w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rem, aliquam!
+                    Shop our best sellers loved by customers for their style,
+                    quality, and timeless appeal!
                 </p>
             </div>
             {/* Rendering Products */}
