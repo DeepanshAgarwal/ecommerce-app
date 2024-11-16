@@ -196,7 +196,12 @@ const PlaceOrder = () => {
                     {/* --------------PAYMENT METHOD SELECTION-------------- */}
                     <div className="flex gap-3 flex-col lg:flex-row">
                         <div
-                            onClick={() => setMethod("stripe")}
+                            // onClick={() => setMethod("stripe")}
+                            onClick={() =>
+                                toast.error(
+                                    "Payments with Stripe is unavailable."
+                                )
+                            }
                             className="flex items-center gap-3 border p-2 px-3 cursor-pointer"
                         >
                             <p
@@ -211,7 +216,12 @@ const PlaceOrder = () => {
                             />
                         </div>
                         <div
-                            onClick={() => setMethod("razorpay")}
+                            // onClick={() => setMethod("razorpay")}
+                            onClick={() =>
+                                toast.error(
+                                    "Payments with Razorpay is unavailable."
+                                )
+                            }
                             className="flex items-center gap-3 border p-2 px-3 cursor-pointer"
                         >
                             <p
