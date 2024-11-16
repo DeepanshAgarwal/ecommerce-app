@@ -70,7 +70,7 @@ const Orders = () => {
                                 <p className="mt-1">
                                     Date:{" "}
                                     <span className="text-gray-400">
-                                        {new Date(item.date).toDateString()}
+                                        {new Date(item.date).toLocaleString()}
                                     </span>
                                 </p>
                                 <p className="mt-1">

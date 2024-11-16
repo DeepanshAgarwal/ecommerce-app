@@ -33,9 +33,6 @@ const placeOrderStipe = async (req, res) => {};
 //Place orders using Razorpay
 const placeOrderRazorpay = async (req, res) => {};
 
-//All orders data for Admin Panel
-const allOrders = async (req, res) => {};
-
 //User Order Data for Frontend
 const userOrders = async (req, res) => {
     try {
@@ -48,8 +45,28 @@ const userOrders = async (req, res) => {
     }
 };
 
+//All orders data for Admin Panel
+const allOrders = async (req, res) => {
+    try {
+        const orders = await orderModel.find({});
+        res.json({ success: true, orders });
+    } catch (error) {
+        console.log(error);
+        res.json({ success: false, message: error.message });
+    }
+};
+
 //Update order status from Admin Panel
-const updateStatus = async (req, res) => {};
+const updateStatus = async (req, res) => {
+    try {
+        const { orderId, status } = req.body;
+        await orderModel.findByIdAndUpdate(orderId, { status });
+        res.json({ success: true, message: "Status Updated" });
+    } catch (error) {
+        console.log(error);
+        res.json({ success: false, message: error.message });
+    }
+};
 
 export {
     placeOrder,
